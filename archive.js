@@ -69,7 +69,7 @@ if(message.author.username != "Grand Archist Corey")
     }	
 });
 
-
+//Archive message to the given collection
 function archiveMessage(message, collection)
 {
     myobj = {author: message.author.username, authorID: message.author.id, messageContent: message.content};
@@ -79,11 +79,13 @@ function archiveMessage(message, collection)
     });
 }
 
-function searchProtectedChannelsForID(key)
+
+//Search protectedChannels array to see if it contains the given ID
+function searchProtectedChannelsForID(id)
 {
     for(var i=0; i<protectedChannels.length; i++)
     {
-        if(protectedChannels[i].protectedChannel === key)
+        if(protectedChannels[i].protectedChannel === id)
         {
             return true;
         }
@@ -91,7 +93,7 @@ function searchProtectedChannelsForID(key)
     return false;
 }
 
-//Search protected channels array for channel name based on channelID - This is to prevent issues if a channel is renamed.
+//Search protectedChannels array for channel name based on channelID - This is to prevent issues if a channel is renamed.
 function searchProtectedChannelsForName(key)
 {
     for(var i=0; i<protectedChannels.length; i++)
