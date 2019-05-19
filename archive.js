@@ -72,7 +72,7 @@ if(message.author.username != "Grand Archist Corey")
 
 function archiveMessage(message, collection)
 {
-    myobj = {aurthor: message.author.username, authorID: message.author.id, messageContent: message.content};
+    myobj = {author: message.author.username, authorID: message.author.id, messageContent: message.content};
     dbo.collection(collection).insertOne(myobj, function(err, res){
         if(err) throw err;
         console.log("Archived message!");
