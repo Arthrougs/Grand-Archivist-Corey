@@ -1,0 +1,29 @@
+{
+  "name": "corey-bot",
+  "version": "1.0.0",
+  "main": "dnd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ehrem",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "discord.js": "^11.4.2",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.6",
+    "reaction-core": "^2.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthrougs/Robo-Corey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arthrougs/Robo-Corey/issues"
+  },
+  "homepage": "https://github.com/Arthrougs/Robo-Corey#readme",
+  "description": ""
+}
